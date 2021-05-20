@@ -1,6 +1,7 @@
 <template>
 <h1>Reaction Timer</h1>
 <h2>測試你的反應速度</h2>
+<p>點選“開始遊戲”後，請於綠色按鈕出現時點選它。</p>
 <button @click="start" :disabled="isPlaying">開始遊戲</button>
 <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
 <!-- <p v-if="showResults">你的反應時間是：{{ score }}  秒</p> -->
